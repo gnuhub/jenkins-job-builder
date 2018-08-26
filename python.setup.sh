@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -x
-if [ ! -d /Volumes/data/anaconda/envs/py3.3_for_jenkins_job_builder ];then
-  conda create -y -n py3.3_for_jenkins_job_builder python=3.3
+if [ ! -d /Volumes/data/anaconda/envs/py3.6.6_for_jenkins_job_builder ];then
+  conda create -y -n py3.6.6_for_jenkins_job_builder python=3.6.6
 fi
 
-source activate py3.3_for_jenkins_job_builder
+source activate py3.6.6_for_jenkins_job_builder
 
 pip install -r requirements.txt
 #pip install -r test-requirements.txt
